@@ -24,7 +24,7 @@
 * Vivid TextButton
 */
 
-TextButton {
+Button {
 	/* Background: */
 	background: #D8D8D8;
 	border: 1px solid #979797;
@@ -36,14 +36,14 @@ TextButton {
 	color: #646D7A;
 }
 
-TextButton:hover {
+Button:hover {
     background-color: #CFCFCF;
     vertical-align: middle;
     border: none;
     border-radius: 6px;
 }
 
-TextButton:active {
+Button:active {
     background-color: #77CEFF;
     color: #FFFFFF;
 }
@@ -52,7 +52,7 @@ TextButton:active {
 * Vivid TextInput
 */
 
-TextInput {
+/*TextInput {
     padding: 5px;
     border: solid 1px #666666;
     border-radius: 6px;
@@ -62,4 +62,4 @@ TextInput {
 TextInput:hover {
     padding: 5px;
     background-color: #DFDFDF;
-}
+}*/
