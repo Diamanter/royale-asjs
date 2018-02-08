@@ -49,6 +49,33 @@ Button:active {
 }
 
 /*
+* Vivid Slider
+*/
+Slider
+{
+	IBeadModel: ClassReference("org.apache.royale.html.beads.models.RangeModel");
+	IBeadView:  ClassReference("org.apache.royale.vivid.beads.SliderView");
+	IBeadLayout: ClassReference("org.apache.royale.vivid.beads.layouts.HorizontalSliderLayout");
+	IBeadController: ClassReference("org.apache.royale.vivid.beads.controllers.HSliderMouseController");
+	position: relative;
+}
+.SliderTrack {
+	position: absolute;
+}
+.SliderThumb {
+	position: absolute;
+}
+
+@media -royale-swf
+{
+    Slider
+	{
+		iThumbView: ClassReference("org.apache.royale.vivid.beads.SliderThumbView");
+		iTrackView: ClassReference("org.apache.royale.vivid.beads.SliderTrackView");
+	}
+}
+
+/*
 * Vivid TextInput
 */
 
