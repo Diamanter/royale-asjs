@@ -28,11 +28,7 @@ package
     internal class VividClasses
     {
         import org.apache.royale.vivid.beads.SliderView; SliderView;
-	    import org.apache.royale.vivid.beads.layouts.HorizontalSliderLayout; HorizontalSliderLayout;
-	    import org.apache.royale.vivid.beads.layouts.VerticalSliderLayout; VerticalSliderLayout;
-        import org.apache.royale.vivid.beads.controllers.HSliderMouseController; HSliderMouseController;
-	    import org.apache.royale.vivid.beads.controllers.VSliderMouseController; VSliderMouseController;
-	
+	    
         COMPILE::SWF
 	    {
             import org.apache.royale.vivid.beads.SliderThumbView; SliderThumbView;

@@ -27,6 +27,7 @@ package org.apache.royale.vivid
 	 * This class extends the standard Application and sets up the
 	 * SimpleCSSValuesImpl (implementation) for convenience.
 	 *
+	 * 
 	 *  @langversion 3.0
 	 *  @playerversion Flash 10.2
 	 *  @playerversion AIR 2.6
@@ -37,6 +38,10 @@ package org.apache.royale.vivid
 		/**
          *  constructor.
          *
+		 * <inject_html>
+     	 * <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+     	 * </inject_html>
+	 	 * 
          *  @langversion 3.0
          *  @playerversion Flash 10.2
          *  @playerversion AIR 2.6

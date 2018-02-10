@@ -1,3 +1,4 @@
+////////////////////////////////////////////////////////////////////////////////
 //
 //  Licensed to the Apache Software Foundation (ASF) under one or more
 //  contributor license agreements.  See the NOTICE file distributed with
@@ -17,24 +18,24 @@
 ////////////////////////////////////////////////////////////////////////////////
 package org.apache.royale.vivid
 {
-    import org.apache.royale.html.TextInput;
-
+    import org.apache.royale.html.TextButton;
+   
     COMPILE::JS
     {
         import org.apache.royale.core.WrappedHTMLElement;
+        import org.apache.royale.html.util.addElementToWrapper;
     }
-
+    
     /**
-     *  The TextInput class implements the basic control for
-     *  single-line text input.
+     *  The Button class provides a Vivid Design Library UI-like appearance for
+     *  a Button.
      *
-     *  @toplevel
      *  @langversion 3.0
      *  @playerversion Flash 10.2
      *  @playerversion AIR 2.6
-     *  @productversion Royale 0.0
+     *  @productversion Royale 0.9.2
      */
-	public class TextInput extends org.apache.royale.html.TextInput
+	public class TextButton extends org.apache.royale.html.TextButton
 	{
         /**
          *  Constructor.
@@ -42,30 +43,21 @@ package org.apache.royale.vivid
          *  @langversion 3.0
          *  @playerversion Flash 10.2
          *  @playerversion AIR 2.6
-         *  @productversion Royale 0.0
+         *  @productversion Royale 0.9.2
          */
-		public function TextInput()
+		public function TextButton()
 		{
 			super();
 		}
-
+        
         /**
-         * @royaleignorecoercion org.apache.royale.core.WrappedHTMLElement
-         */
-        COMPILE::JS
-        override protected function createElement():WrappedHTMLElement
-        {
+		 * @private
+		 * @royaleignorecoercion org.apache.royale.core.WrappedHTMLElement
+		 */
+		COMPILE::JS
+		override protected function createElement():WrappedHTMLElement
+		{
             return super.createElement();
-			/*addElementToWrapper(this,'input');
-            element.setAttribute('type', 'text');
-            element.className = 'TextInput';
-            typeNames = 'TextInput';
-
-            //attach input handler to dispatch royale change event when user write in textinput
-            //goog.events.listen(element, 'change', killChangeHandler);
-            goog.events.listen(element, 'input', textChangeHandler);
-            return element;*/
-        }
-
+		}
 	}
 }
