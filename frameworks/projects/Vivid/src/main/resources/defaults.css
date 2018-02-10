@@ -24,35 +24,37 @@
 * Vivid TextButton
 */
 
-Button {
+TextButton {
 	/* Background: */
-	background: #D8D8D8;
+	background-color: #D8D8D8;
 	border: 1px solid #979797;
 	border-radius: 3px;
 
 	/* TextField: */
-	font-family: HelveticaNeue;
-	font-size: 12px;
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
 	color: #646D7A;
 }
 
-Button:hover {
+TextButton:hover {
     background-color: #CFCFCF;
     vertical-align: middle;
     border: none;
     border-radius: 6px;
 }
 
-Button:active {
+TextButton:active {
     background-color: #77CEFF;
     color: #FFFFFF;
 }
 
 TextInput
 {
-	border: 1px solid #808080;
-	border-radius: 2px;
-	padding: 4px;
+	font-family: 'Lato', sans-serif;
+	font-size: 13px;
+	border: 1px solid #000;
+	border-radius: 0px;
+	padding: 0px;
 	margin: 0px;
 }
 
@@ -62,8 +64,8 @@ TextInput
 Slider {
 	IBeadModel: ClassReference("org.apache.royale.html.beads.models.RangeModel");
 	IBeadView:  ClassReference("org.apache.royale.vivid.beads.SliderView");
-	IBeadLayout: ClassReference("org.apache.royale.vivid.beads.layouts.HorizontalSliderLayout");
-	IBeadController: ClassReference("org.apache.royale.vivid.beads.controllers.HSliderMouseController");
+	IBeadLayout: ClassReference("org.apache.royale.html.beads.layouts.HorizontalSliderLayout");
+	IBeadController: ClassReference("org.apache.royale.html.beads.controllers.HSliderMouseController");
 	position: relative;
 }
 .SliderTrack {

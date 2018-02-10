@@ -34,8 +34,7 @@ limitations under the License.
 		<js:VerticalLayout/>
 	</js:beads>
 	
-	<v:Button id="button" text="Button" width="120" height="40"/>
-	<v:Button id="button2" text="Button2" width="120" height="40"/>
+	<v:TextButton id="button" text="Button" width="120" height="40"/>
 
 	<v:Slider id="slider" width="250" value="120" minimum="50" maximum="250"
 				valueChange="onValueChange(event)"/>

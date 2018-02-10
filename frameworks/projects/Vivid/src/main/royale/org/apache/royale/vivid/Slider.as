@@ -18,13 +18,11 @@
 ////////////////////////////////////////////////////////////////////////////////
 package org.apache.royale.vivid
 {
-	import org.apache.royale.core.IRangeModel;
-	import org.apache.royale.core.UIBase;
+	import org.apache.royale.html.Slider;
 
     COMPILE::JS
     {
         import org.apache.royale.core.WrappedHTMLElement;
-		import org.apache.royale.html.util.addElementToWrapper;
     }
 
 	[Event(name="valueChange", type="org.apache.royale.events.Event")]
@@ -45,7 +43,7 @@ package org.apache.royale.vivid
 	 *  @playerversion AIR 2.6
 	 *  @productversion Royale 0.9.2
 	 */
-	public class Slider extends UIBase
+	public class Slider extends org.apache.royale.html.Slider
 	{
 		/**
 		 *  constructor.
@@ -58,103 +56,9 @@ package org.apache.royale.vivid
 		public function Slider()
 		{
 			super();
-
-			className = "Slider";
-
-			IRangeModel(model).value = 0;
-			IRangeModel(model).minimum = 0;
-			IRangeModel(model).maximum = 100;
-			IRangeModel(model).stepSize = 1;
-			IRangeModel(model).snapInterval = 1;
 		}
 
-		/**
-		 *  The current value of the Slider.
-		 *
-		 *  @langversion 3.0
-		 *  @playerversion Flash 10.2
-		 *  @playerversion AIR 2.6
-		 *  @productversion Royale 0.0
-		 */
-		[Bindable("valueChange")]
-		public function get value():Number
-		{
-			return IRangeModel(model).value;
-		}
-		public function set value(newValue:Number):void
-		{
-			IRangeModel(model).value = newValue;
-		}
-
-		/**
-		 *  The minimum value of the Slider.
-		 *
-		 *  @langversion 3.0
-		 *  @playerversion Flash 10.2
-		 *  @playerversion AIR 2.6
-		 *  @productversion Royale 0.0
-		 */
-		public function get minimum():Number
-		{
-			return IRangeModel(model).minimum;
-		}
-		public function set minimum(value:Number):void
-		{
-			IRangeModel(model).minimum = value;
-		}
-
-		/**
-		 *  The maximum value of the Slider.
-		 *
-		 *  @langversion 3.0
-		 *  @playerversion Flash 10.2
-		 *  @playerversion AIR 2.6
-		 *  @productversion Royale 0.0
-		 */
-		public function get maximum():Number
-		{
-			return IRangeModel(model).maximum;
-		}
-		public function set maximum(value:Number):void
-		{
-			IRangeModel(model).maximum = value;
-		}
-
-		/**
-		 *  The modulus of the Slider value. The thumb will be positioned
-		 *  at the nearest multiple of this value.
-		 *
-		 *  @langversion 3.0
-		 *  @playerversion Flash 10.2
-		 *  @playerversion AIR 2.6
-		 *  @productversion Royale 0.0
-		 */
-		public function get snapInterval():Number
-		{
-			return IRangeModel(model).snapInterval;
-		}
-		public function set snapInterval(value:Number):void
-		{
-			IRangeModel(model).snapInterval = value;
-		}
-
-		/**
-		 *  The amount to move the thumb when the track is selected. This value is
-		 *  adjusted to fit the nearest snapInterval.
-		 *
-		 *  @langversion 3.0
-		 *  @playerversion Flash 10.2
-		 *  @playerversion AIR 2.6
-		 *  @productversion Royale 0.0
-		 */
-        public function get stepSize():Number
-        {
-            return IRangeModel(model).stepSize;
-        }
-        public function set stepSize(value:Number):void
-        {
-            IRangeModel(model).stepSize = value;
-        }
+		
 
         /**
          * @royaleignorecoercion org.apache.royale.core.WrappedHTMLElement
@@ -162,33 +66,7 @@ package org.apache.royale.vivid
         COMPILE::JS
         override protected function createElement():WrappedHTMLElement
         {
-			addElementToWrapper(this,'div');
-
-			// just to give it some default values
-            element.style.width = '100px';
-            element.style.height = '30px';
-            className = 'Slider';
-            return element;
-        }
-
-        /**
-		 * @private
-         */
-        COMPILE::JS
-        public function snap(value:Number):Number
-        {
-            var si:Number = snapInterval;
-            var n:Number = Math.round((value - minimum) / si) *
-                si + minimum;
-            if (value > 0)
-            {
-                if (value - n < n + si - value)
-                    return n;
-                return n + si;
-            }
-            if (value - n > n + si - value)
-                return n + si;
-            return n;
+			return super.createElement();
         }
     }
 }
