@@ -36,12 +36,12 @@ package org.apache.royale.vivid.beads.controllers
         import goog.events;
         import goog.events.EventType;
         import org.apache.royale.events.BrowserEvent;
-        import org.apache.royale.html.Slider;
+        import org.apache.royale.vivid.Slider;
     }
 	
 	/**
 	 *  The HSliderMouseController class bead handles mouse events on the 
-	 *  org.apache.royale.html.Slider's component parts (thumb and track) and 
+	 *  org.apache.royale.vivid.Slider's component parts (thumb and track) and 
 	 *  dispatches change events on behalf of the Slider (as well as co-ordinating visual 
 	 *  changes (such as moving the thumb when the track has been tapped or clicked). Use
 	 *  this controller for horizontally oriented Sliders.

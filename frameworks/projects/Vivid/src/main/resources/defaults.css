@@ -51,8 +51,7 @@ Button:active {
 /*
 * Vivid Slider
 */
-Slider
-{
+Slider {
 	IBeadModel: ClassReference("org.apache.royale.html.beads.models.RangeModel");
 	IBeadView:  ClassReference("org.apache.royale.vivid.beads.SliderView");
 	IBeadLayout: ClassReference("org.apache.royale.vivid.beads.layouts.HorizontalSliderLayout");
