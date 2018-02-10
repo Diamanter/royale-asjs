@@ -23,6 +23,7 @@
 
     <component id="Application" class="org.apache.royale.vivid.Application"/>
     <component id="Button" class="org.apache.royale.vivid.Button"/>
+    <component id="TextInput" class="org.apache.royale.vivid.TextInput"/>
     <component id="Slider" class="org.apache.royale.vivid.Slider"/>
     <component id="VerticalSliderLayout" class="org.apache.royale.vivid.beads.layouts.VerticalSliderLayout" />
     <component id="HorizontalSliderLayout" class="org.apache.royale.vivid.beads.layouts.HorizontalSliderLayout" />

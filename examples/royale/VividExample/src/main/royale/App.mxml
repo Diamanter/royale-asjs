@@ -34,7 +34,7 @@
 				<js:VerticalLayout />
 			</js:beads>
 			<local:ButtonPlayGround/>
-			<!--<local:TextInputPlayGround/>-->
+			<local:TextInputPlayGround/>
 			
         </js:View>
 	</js:initialView>

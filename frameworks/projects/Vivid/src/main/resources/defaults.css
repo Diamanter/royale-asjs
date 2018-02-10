@@ -48,6 +48,14 @@ Button:active {
     color: #FFFFFF;
 }
 
+TextInput
+{
+	border: 1px solid #808080;
+	border-radius: 2px;
+	padding: 4px;
+	margin: 0px;
+}
+
 /*
 * Vivid Slider
 */
@@ -63,6 +71,7 @@ Slider {
 }
 .SliderThumb {
 	position: absolute;
+	border-radius: 15px;
 }
 
 @media -royale-swf
