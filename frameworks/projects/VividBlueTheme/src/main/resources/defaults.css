@@ -18,35 +18,6 @@
  */
 
 @namespace "library://ns.apache.org/royale/vivid";
-/*@namespace svg "library://ns.apache.org/royale/svg";*/
-
-/*
-* Vivid TextButton
-*/
-
-TextButton {
-	/* Background: */
-	background-color: #D8D8D8;
-	border: 1px solid #979797;
-	border-radius: 3px;
-
-	/* TextField: */
-	font-family: 'Lato', sans-serif;
-	font-size: 13px;
-	color: #646D7A;
-}
-
-TextButton:hover {
-    background-color: #CFCFCF;
-    vertical-align: middle;
-    border: none;
-    border-radius: 6px;
-}
-
-TextButton:active {
-    background-color: #77CEFF;
-    color: #FFFFFF;
-}
 
 /*
 * Vivid TextField
@@ -56,33 +27,34 @@ TextButton:active {
     /*IBeadView: ClassReference("org.apache.royale.html.beads.TextInputWithBorderView");
 	IBeadController: ClassReference("org.apache.royale.html.beads.controllers.EditableTextKeyboardController");*/
 	
-	/*position: relative;
+	position: relative;
 	display: inline-block;
 	box-sizing: border-box;
 	width: 300px;
 	max-width: 100%;
-	margin: 0;*/
+	margin: 0;
 }
 
 .vTextfield--input {
-	/*border: none;
-	border-bottom: 1px solid;
-	border-bottom-color:  rgba(0, 0, 0, 0.12);
-	display: block;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
+
+	border: none;
+	border-bottom: 2px solid;
+	border-bottom-color: #ff0000;
+	display: block;
 	margin: 0;
 	padding: 4 0;
 	width: 100px;
 	background: transparent;
 	text-align: left;
 	color: inherit;
-	outline: none;*/
+	outline: none;
 }
 
 .vTextfield--label {
-	/*bottom: 0;
-	color: rgba(0, 0, 0, 0.26);
+	bottom: 0;
+	color: #ff0000;
 	font-size: 13px;
 	left: 0;
 	right: 0;
@@ -92,48 +64,5 @@ TextButton:active {
 	width: 100%;
 	overflow: hidden;
 	white-space: nowrap;
-	text-align: left;*/
+	text-align: left;
 }
-
-/*
-* Vivid Slider
-*/
-Slider {
-	IBeadModel: ClassReference("org.apache.royale.html.beads.models.RangeModel");
-	IBeadView:  ClassReference("org.apache.royale.vivid.beads.SliderView");
-	IBeadLayout: ClassReference("org.apache.royale.html.beads.layouts.HorizontalSliderLayout");
-	IBeadController: ClassReference("org.apache.royale.html.beads.controllers.HSliderMouseController");
-	position: relative;
-}
-.SliderTrack {
-	position: absolute;
-}
-.SliderThumb {
-	position: absolute;
-	border-radius: 15px;
-}
-
-@media -royale-swf
-{
-    Slider
-	{
-		iThumbView: ClassReference("org.apache.royale.vivid.beads.SliderThumbView");
-		iTrackView: ClassReference("org.apache.royale.vivid.beads.SliderTrackView");
-	}
-}
-
-/*
-* Vivid TextInput
-*/
-
-/*TextInput {
-    padding: 5px;
-    border: solid 1px #666666;
-    border-radius: 6px;
-    color: #333333;
-}
-
-TextInput:hover {
-    padding: 5px;
-    background-color: #DFDFDF;
-}*/
