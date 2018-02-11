@@ -23,7 +23,7 @@
 
     <component id="Application" class="org.apache.royale.vivid.Application"/>
     <component id="TextButton" class="org.apache.royale.vivid.TextButton"/>
-    <component id="TextInput" class="org.apache.royale.vivid.TextInput"/>
+    <component id="TextField" class="org.apache.royale.vivid.TextField"/>
     <component id="Slider" class="org.apache.royale.vivid.Slider"/>
     
 </componentPackage>
