@@ -23,6 +23,6 @@ limitations under the License.
     
 	
 	
-	<v:TextInput text="Text Input" width="120" height="40"/>
+	<v:TextField text="Text Input" width="120" height="40"/>
 
 </js:Group>
